@@ -7,12 +7,12 @@
     <title>Amber Shipley</title>
     <style>
       body {
-        margin: 0;
+        margin: 0 0 50vh;
         font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
           Times New Roman, serif;
       }
       header {
-        margin: 8.4rem 8vw 12vh;
+        padding: 8.4rem 8vw 9vh;
       }
       h1 {
         font-size: 2.8rem;
@@ -28,7 +28,7 @@
         padding: 0 0 3.6rem 0;
         display: flex;
         width: fit-content;
-        margin: 5rem 0 0 0;
+        margin: 9vh 0 0 0;
         border-bottom: 1px solid rgb(243, 241, 241);
       }
       li {
@@ -63,6 +63,9 @@
         padding: 1rem 1rem;
         color: black;
       }
+      nav a:active {
+        background-color: rgb(243, 241, 241);
+      }
       p a {
         color: slategray;
       }
@@ -72,7 +75,19 @@
         border: 1px solid  rgb(243, 241, 241);
         border-radius: 3px;
         padding: 1rem;
-        margin: 8vw;
+        margin-left: 8vw;
+        background-color: rgb(190, 240, 220);
+        box-shadow: 7px 7px 19px lightgray;
+        display: inline-block;
+      }
+      .button:active {
+        background-color: rgb(131, 166, 152);
+        transform: translate(3%, 3%);
+        transition: transform 300ms;
+        box-shadow: none;
+      }
+      #about {
+        padding-top: 3rem;
       }
     </style>
   </head>
@@ -90,7 +105,7 @@
         Espresso Enthusiast
       </p>
     </header>
-      <a class='button' href="mailto:amber@espressogoddess.dev">get in touch</a>
+        <a class='button' href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together">get in touch</a>
     <ul>
       <li>
         <a href="https://www.linkedin.com/in/amber-shipley/"
