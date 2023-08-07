@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amber Shipley</title>
-  <style>
-    body {
-      font-weight: 200;
-      font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif
-    }
-    header {
-      font-size: 3rem;
-      margin: 10vh 15vw;
-    }
-    ul {
-      transform: rotate(-0.25turn);
-      width:fit-content;
-    }
-    li {
-      display: inline;
-      margin-right: 1.2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Amber Shipley</h1>
-    <p>Software Engineer <code>|</code> Espresso Enthusiast</p>
-  </header>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/amber-shipley/">LinkedIn</a></li>
-    <li><a href="https://github.com/espressoGoddess">GitHub</a></li>
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amber Shipley</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
+          Times New Roman, serif;
+      }
+      header {
+        margin: 8vh 8vw 6vh;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin: 0 0 4vh;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+      }
+      li {
+        display: list-item;
+        list-style-type: none;
+        margin: 2vh calc(8vw + 1rem);
+      }
+      .icon {
+        height: 2rem;
+        width: auto;
+      }
+      code {
+        display: none;
+      }
+      header p {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Amber Shipley</h1>
+      <p>
+        Software Engineer <code>|</code><br />
+        Espresso Enthusiast
+      </p>
+    </header>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/amber-shipley/"
+          ><image class="icon" src="./linkedin.png"
+        /></a>
+      </li>
+      <li>
+        <a href="https://github.com/espressoGoddess"
+          ><image class="icon" src="./github.png"
+        /></a>
+      </li>
+    </ul>
+  </body>
 </html>
