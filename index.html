@@ -18,23 +18,22 @@
         font-size: 2.8rem;
         margin: 0 0 3rem;
       }
-      h2 {
+      h2, h3 {
         margin-left: 8vw;
       }
       p {
-        margin: 3vh 5vw;
+        margin: 2vh 5vw;
       }
       ul {
-        padding: 0 0 10vh;
+        padding: 0 0;
         display: flex;
-        width: fit-content;
-        margin: 12.1vh 1rem 0 1rem;
-        border-bottom: 1px solid rgb(243, 241, 241);
+        margin: 1vh 2vw;
       }
       li {
         display: list-item;
         list-style-type: none;
-        margin: 2vh calc(8vw + 1rem);
+        margin: 2vh calc(7vw + 1rem);
+        font-weight: bolder;
       }
       .icon {
         height: 2rem;
@@ -69,6 +68,23 @@
       p a {
         color: slategray;
       }
+      li img {
+        width: .5rem;
+        height: auto;
+      }
+      .project-img {
+        text-align: center;
+      }
+      .project-img img{
+        width: 88vw;
+        height: auto;
+        margin: .5vh auto 0 auto;
+      }
+      .icons {
+        padding: 0 0 10vh;
+        margin: 12.1vh 1rem 0 1rem;
+        border-bottom: 1px solid rgb(243, 241, 241);
+      }
       .button {
         color: black;
         text-decoration: none;
@@ -79,6 +95,20 @@
         background-color: rgb(190, 240, 220);
         box-shadow: 7px 7px 19px lightgray;
         display: inline-block;
+      }
+      .btn-container {
+        display: flex;
+        width: fit-content
+      }
+      .project-links {
+        width: 100%;
+        margin: 2vh 3vw 2vh 0;
+        justify-content: space-evenly;
+      }
+      .project-links .button {
+        margin: 0 0;
+        background-color: white;
+        box-shadow: none;
       }
       .button:active {
         background-color: rgb(131, 166, 152);
@@ -93,6 +123,16 @@
       }
       #about p {
         line-height: 1.5;
+      }
+      #projects ul {
+        justify-content: center;
+      }
+      #projects li  {
+        margin: 2vh .7rem 0 0;
+        font-size: .8rem;
+      }
+      .project {
+        border: 1px solid rgb(243, 241, 241)
       }
     </style>
   </head>
@@ -110,8 +150,10 @@
         Espresso Enthusiast
       </p>
     </header>
-        <a class='button' href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together">get in touch</a>
-    <ul>
+    <div class="btn-container">
+      <a class='button' href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together">get in touch</a>
+    </div>
+    <ul class="icons">
       <li>
         <a href="https://www.linkedin.com/in/amber-shipley/"
           ><image class="icon" src="./linkedin.png"
@@ -145,7 +187,27 @@
     </section>
     <section id="projects">
       <h2>my projects.</h2>
+      <article class="project">
+        <div class='project-img'>
+          <img src="./beam1.png"/>
 
+        </div>
+        <h3>Beam</h3>
+        <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
+        <ul>
+          <li>PostgreSQL</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Express.js</li>
+          <li><img src='./bullet.png'/></li>
+          <li>React</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Node</li>
+        </ul>
+        <div class="btn-container project-links">
+          <a class='button' href="https://github.com/espressoGoddess/beam">source</a>
+          <a class='button' href="https://beam-pearl.vercel.app/">demo</a>
+        </div>
+      </article>
     </section>
   </body>
 </html>
