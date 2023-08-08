@@ -28,6 +28,7 @@
         padding: 0 0;
         display: flex;
         margin: 1vh 2vw;
+        flex-wrap: wrap;
       }
       li {
         display: list-item;
@@ -76,9 +77,9 @@
         text-align: center;
       }
       .project-img img{
-        width: 88vw;
+        width: 91.3vw;
         height: auto;
-        margin: .5vh auto 0 auto;
+        margin: 0 auto 0 auto;
       }
       .icons {
         padding: 0 0 10vh;
@@ -107,7 +108,6 @@
       }
       .project-links .button {
         margin: 0 0;
-        background-color: white;
         box-shadow: none;
       }
       .button:active {
@@ -132,7 +132,8 @@
         font-size: .8rem;
       }
       .project {
-        border: 1px solid rgb(243, 241, 241)
+        border: 1px solid rgb(243, 241, 241);
+        padding-bottom: 5vh;
       }
     </style>
   </head>
@@ -189,8 +190,27 @@
       <h2>my projects.</h2>
       <article class="project">
         <div class='project-img'>
+          <img src="./mia2.png"/>
+        </div>
+        <h3>Mia</h3>
+        <p>Mia simplifies your healthcare journey by consolidating all your vital medical information in one place. Keep track of conditions, medications, doctors, and health events effortlessly. Access a centralized doctor directory. Maintain a personal health log to record important events and notes. Take control of your health with Mia.</p>
+        <ul>
+          <li>React</li>
+          <li><img src='./bullet.png'/></li>
+          <li>TypeScript</li>
+          <li><img src='./bullet.png'/></li>
+          <li>GraphQL</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Cypress</li>
+        </ul>
+        <div class="btn-container project-links">
+          <a class='button' href="https://github.com/Medical-Information-Assistant-MIA/MIA-FE">source</a>
+          <a class='button' href="https://mia-fe.vercel.app/">demo</a>
+        </div>
+      </article>
+      <article class="project">
+        <div class='project-img'>
           <img src="./beam1.png"/>
-
         </div>
         <h3>Beam</h3>
         <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
@@ -202,6 +222,8 @@
           <li>React</li>
           <li><img src='./bullet.png'/></li>
           <li>Node</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Cypress</li>
         </ul>
         <div class="btn-container project-links">
           <a class='button' href="https://github.com/espressoGoddess/beam">source</a>
