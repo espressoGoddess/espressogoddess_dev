@@ -7,16 +7,16 @@
     <title>Amber Shipley</title>
     <style>
       body {
-        margin: 0 0 50vh;
+        margin: 0 0;
         font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
           Times New Roman, serif;
       }
       header {
-        padding: 8.4rem 8vw 13vh;
+        padding: 17vh 8vw 13vh;
       }
       h1 {
         font-size: 2.8rem;
-        margin: 0 0 3rem;
+        margin: 0 0 4vh;
       }
       h2, h3 {
         margin-left: 8vw;
@@ -29,12 +29,12 @@
         padding: 0 0;
         display: flex;
         margin: 1vh 2vw;
-        flex-wrap: wrap;
+        justify-content: center;
       }
       li {
         display: list-item;
         list-style-type: none;
-        margin: 2vh calc(7vw + 1rem);
+        margin: 2vh 14vw;
         font-weight: bolder;
       }
       .icon {
@@ -51,17 +51,17 @@
       }
       nav {
         display: flex;
-        margin: 0 1rem;
+        margin: 0 0;
         justify-content: space-between;
         border-bottom: 1px solid rgb(243, 241, 241);
         position: fixed;
         top: 0;
-        width: 91.4%;
+        width: 100vw;
         background-color: white;
       }
       nav a {
         text-decoration: none;
-        padding: 1rem 1rem;
+        padding: 2vh 5vw;
         color: black;
       }
       nav a:active {
@@ -78,13 +78,14 @@
         text-align: center;
       }
       .project-img img{
-        width: 97vw;
+        width: 94vw;
         height: auto;
-        margin: 0 auto 0 auto;
+        margin: 2vh auto 0 auto;
+        border: 1px solid rgb(243, 241, 241);
       }
       .icons {
         padding: 0 0 10vh;
-        margin: 12.1vh 1rem 0 1rem;
+        margin: 7vh 4.5vw 0 4.5vw;
         border-bottom: 1px solid rgb(243, 241, 241);
       }
       .button {
@@ -100,11 +101,11 @@
       }
       .btn-container {
         display: flex;
-        width: fit-content
+        width: fit-content;
       }
       .project-links {
         width: 100%;
-        margin: 2vh 3vw 2vh 0;
+        margin: 5vh 3vw 2vh 0;
         justify-content: space-evenly;
       }
       .project-links .button {
@@ -118,7 +119,7 @@
         box-shadow: none;
       }
       #about, #projects {
-        padding: 3rem 0 10vh;
+        padding: 6.5vh 0 10vh;
         margin: 0 1.3vw;
         border-bottom: 1px solid rgb(243, 241, 241);
       }
@@ -128,14 +129,28 @@
       #projects ul {
         justify-content: center;
       }
-      #projects li  {
-        margin: 2vh .5rem 0 0;
+      #projects li, #contact li  {
+        margin: 2vh 2vw 0 0;
         font-size: .8rem;
+      }
+      #projects {
+        border: none;
+        padding-bottom: 0;
       }
       .project {
         border: 1px solid rgb(243, 241, 241);
         padding-bottom: 5vh;
         margin-top: 1vh;
+      }
+      #contact {
+        padding-bottom: 4vh;
+      }
+      #contact ul {
+        border-bottom: none;
+        justify-content: center;
+      }
+      #contact li {
+        margin: 0 8vw;
       }
     </style>
   </head>
@@ -192,7 +207,7 @@
       <h2>my projects.</h2>
       <article class="project">
         <div class='project-img'>
-          <img src="./mia2.png"/>
+          <img src="./mia.png"/>
         </div>
         <h3>Mia</h3>
         <p>Mia simplifies user's healthcare journey by consolidating all vital medical information in one place. Keep track of conditions, medications, doctors, and health events effortlessly. Access a centralized doctor directory. Maintain a personal health log to record important events and notes. Take control of your health with Mia.</p>
@@ -212,7 +227,7 @@
       </article>
       <article class="project">
         <div class='project-img'>
-          <img src="./beam1.png"/>
+          <img src="./beam.png"/>
         </div>
         <h3>Beam</h3>
         <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
@@ -233,5 +248,28 @@
         </div>
       </article>
     </section>
+    <footer id="contact">
+      <h2>let's connect.</h2>
+      <ul class="icons">
+        <li>
+          <a href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together"><img class='icon' src='./email.png'/>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/amber-shipley/"
+            ><image class="icon" src="./linkedin.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/espressoGoddess"
+            ><image class="icon" src="./github.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharing"
+            ><image class="icon" src="./cv.png"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
