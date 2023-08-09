@@ -74,6 +74,9 @@
         width: .5rem;
         height: auto;
       }
+      footer {
+        margin-left: 10vw;
+      }
       .project-img {
         text-align: center;
       }
@@ -118,7 +121,7 @@
         transition: transform 300ms;
         box-shadow: none;
       }
-      #about, #projects {
+      #about, #projects, #contact {
         padding: 6.5vh 0 10vh;
         margin: 0 1.3vw;
         border-bottom: 1px solid rgb(243, 241, 241);
@@ -151,6 +154,42 @@
       }
       #contact li {
         margin: 0 8vw;
+      }
+      @media only screen and (min-width: 1200px) {
+        #about, #projects, #contact {
+        margin: 0 10vw;
+      }
+      .project-img img{
+        width: 70vw;
+        height: auto;
+        margin: 2vh auto 0 auto;
+      }
+      .project-links {
+        width: 50%;
+        /* center them*/
+      }
+      #projects li, #contact li  {
+        font-size: 1.2rem;
+      }
+      .icon {
+        height: 3rem;
+        width: auto;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      header {
+        padding-left: 18vw
+      }
+      .btn-container {
+        margin-left: 10vw;
+      }
+      .icons li {
+        margin: 2vh 13vw;
+      }
+      .project-links {
+        padding-left: 10vw;
+      }
       }
     </style>
   </head>
@@ -248,7 +287,7 @@
         </div>
       </article>
     </section>
-    <footer id="contact">
+    <section id="contact">
       <h2>let's connect.</h2>
       <ul class="icons">
         <li>
@@ -270,6 +309,8 @@
           /></a>
         </li>
       </ul>
+    </section>
+    <footer>
       <p>Code and Design by Amber Shipley</p>
     </footer>
   </body>
