@@ -120,6 +120,7 @@
         transform: translate(3%, 3%);
         transition: transform 300ms;
         box-shadow: none;
+        color: white;
       }
       #about, #projects, #contact {
         padding: 6.5vh 0 10vh;
@@ -155,41 +156,54 @@
       #contact li {
         margin: 0 8vw;
       }
+      .headshot {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vh 5vw;
+      }
       @media only screen and (min-width: 1200px) {
         #about, #projects, #contact {
-        margin: 0 10vw;
-      }
-      .project-img img{
-        width: 70vw;
-        height: auto;
-        margin: 2vh auto 0 auto;
-      }
-      .project-links {
-        width: 50%;
-        /* center them*/
-      }
-      #projects li, #contact li  {
-        font-size: 1.2rem;
-      }
-      .icon {
-        height: 3rem;
-        width: auto;
-      }
-      p {
-        font-size: 1.2rem;
-      }
-      header {
-        padding-left: 18vw
-      }
-      .btn-container {
-        margin-left: 10vw;
-      }
-      .icons li {
-        margin: 2vh 13vw;
-      }
-      .project-links {
-        padding-left: 10vw;
-      }
+          margin: 0 10vw;
+        }
+        .project-img img{
+          width: 70vw;
+          height: auto;
+          margin: 2vh auto 0 auto;
+        }
+        .project-links {
+          width: 50%;
+          /* center them*/
+        }
+        #projects li, #contact li  {
+          font-size: 1.2rem;
+        }
+        .icon {
+          height: 3rem;
+          width: auto;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        header {
+          padding-left: 18vw
+        }
+        .btn-container {
+          margin-left: 10vw;
+        }
+        .icons li {
+          margin: 2vh 13vw;
+        }
+        .project-links {
+          padding-left: 10vw;
+        }
+        .about {
+          display: flex;
+          align-items: flex-start;
+        }
+        .headshot {
+          width: 12vw;
+          height: 12vw;
+        }
       }
     </style>
   </head>
@@ -229,18 +243,23 @@
     </ul>
     <section id="about">
       <h2>about me.</h2>
-      <p>
-        With a backpack full of snacks and a heart full of wanderlust, I feel at home wherever there's a good espresso and network connection. From debugging code to decoding foreign menus, I love tackling new challenges with a problem-solving mindset!
-      </p>
-      <p>
-        By trade and by passion, I am a software developer focused on creating delightful user experiences. In the past, you could find me running a small business, working in personal healthcare and creating space for healing, and hiring contractors and managing schedules as a personal assistant.
-      </p>
-      <p>
-        My core values are reliability, discovery, and adventure.
-      </p>
-      <p>
-        My ideal team is one that values collaboration, diversity, open communication, and a healthy work-life balance. If this sounds like your team, <a href="mailto:amber@espressogoddess.dev">contact me</a>! I would love to learn more about it.</p>
-      </p>
+      <div class="about">
+        <img src="./headshot.png" class='headshot'/>
+        <div>
+          <p>
+            With a backpack full of snacks and a heart full of wanderlust, I feel at home wherever there's a good espresso and network connection. From debugging code to decoding foreign menus, I love tackling new challenges with a problem-solving mindset!
+          </p>
+          <p>
+            By trade and by passion, I am a software developer focused on creating delightful user experiences. In the past, you could find me running a small business, working in personal healthcare and creating space for healing, and hiring contractors and managing schedules as a personal assistant.
+          </p>
+          <p>
+            My core values are reliability, discovery, and adventure.
+          </p>
+          <p>
+            My ideal team is one that values collaboration, diversity, open communication, and a healthy work-life balance. If this sounds like your team, <a href="mailto:amber@espressogoddess.dev">contact me</a>! I would love to learn more about it.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="projects">
       <h2>my projects.</h2>
