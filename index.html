@@ -77,7 +77,7 @@
       footer {
         margin-left: 10vw;
       }
-      .project-img {
+      .project-imgm .project-imgs {
         text-align: center;
       }
       .project-img img{
@@ -170,6 +170,16 @@
           height: auto;
           margin: 2vh auto 0 auto;
         }
+        /*.project-imgs {
+          flex;
+          justify-items: center;
+        }*/
+        .project-imgs img{
+          width: 23vw;
+          height: auto;
+          margin: 2vh auto 0 auto;
+          border: 1px solid rgb(243, 241, 241);
+        }
         .project-links {
           width: 50%;
           /* center them*/
@@ -222,7 +232,7 @@
       </p>
     </header>
     <div class="btn-container">
-      <a class='button' href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together">get in touch</a>
+      <a class='button' href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together">get in touch</a>
     </div>
     <ul class="icons">
       <li>
@@ -263,6 +273,28 @@
     </section>
     <section id="projects">
       <h2>my projects.</h2>
+      <article class="project">
+        <div class='project-imgs'>
+          <img src="./bingo1.png"/>
+          <img src="./bingo2.png"/>
+          <img src="./bingo3.png"/>
+        </div>
+        <h3>Mia</h3>
+        <p>Mia simplifies user's healthcare journey by consolidating all vital medical information in one place. Keep track of conditions, medications, doctors, and health events effortlessly. Access a centralized doctor directory. Maintain a personal health log to record important events and notes. Take control of your health with Mia.</p>
+        <ul>
+          <li>React</li>
+          <li><img src='./bullet.png'/></li>
+          <li>TypeScript</li>
+          <li><img src='./bullet.png'/></li>
+          <li>GraphQL</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Cypress</li>
+        </ul>
+        <div class="btn-container project-links">
+          <a class='button' href="https://github.com/Medical-Information-Assistant-MIA/MIA-FE">source</a>
+          <a class='button' href="https://mia-fe.vercel.app/">demo</a>
+        </div>
+      </article>
       <article class="project">
         <div class='project-img'>
           <img src="./mia.png"/>
