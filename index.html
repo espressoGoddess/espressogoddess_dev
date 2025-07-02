@@ -77,10 +77,10 @@
       footer {
         margin-left: 10vw;
       }
-      .project-imgm .project-imgs {
+      .project-img  {
         text-align: center;
       }
-      .project-img img{
+      .web-img{
         width: 94vw;
         height: auto;
         margin: 2vh auto 0 auto;
@@ -105,6 +105,10 @@
       .btn-container {
         display: flex;
         width: fit-content;
+      }
+      .mobile-img {
+        height: 80vh;
+        width: auto;
       }
       .project-links {
         width: 100%;
@@ -165,16 +169,12 @@
         #about, #projects, #contact {
           margin: 0 10vw;
         }
-        .project-img img{
+        .web-img{
           width: 70vw;
           height: auto;
           margin: 2vh auto 0 auto;
         }
-        /*.project-imgs {
-          flex;
-          justify-items: center;
-        }*/
-        .project-imgs img{
+        img{
           width: 23vw;
           height: auto;
           margin: 2vh auto 0 auto;
@@ -268,50 +268,33 @@
     <section id="projects">
       <h2>my projects.</h2>
       <article class="project">
-        <!-- <div class='project-imgs'>
-          <img src="./bingo1.png"/>
-          <img src="./bingo2.png"/>
-          <img src="./bingo3.png"/>
-        </div> -->
-        <h3>Mia</h3>
-        <p>Mia simplifies user's healthcare journey by consolidating all vital medical information in one place. Keep track of conditions, medications, doctors, and health events effortlessly. Access a centralized doctor directory. Maintain a personal health log to record important events and notes. Take control of your health with Mia.</p>
+        <div class='project-img'>
+          <img class="mobile-img" src="./bingo1.png"/>
+          <img class="mobile-img" src="./bingo2.png"/>
+          <img class="mobile-img" src="./bingo3.png"/>
+        </div>
+        <h3>Bingo</h3>
+        <p>Bingo is a full-stack bingo application with dynamic game board generation and user authentication. It is built using a normalized database schema to ensure data integrity and minimize duplication and authentication with Google OAuth via Next-Auth for secure user authentication.
+</p>
         <ul>
-          <li>React</li>
-          <li><img src='./bullet.png'/></li>
           <li>TypeScript</li>
           <li><img src='./bullet.png'/></li>
-          <li>GraphQL</li>
+          <li>Next.js</li>
           <li><img src='./bullet.png'/></li>
-          <li>Cypress</li>
+          <li>Supabase</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Next-auth</li>
+          <li><img src='./bullet.png'/></li>
+          <li>Tailwind</li>
         </ul>
         <div class="btn-container project-links">
-          <a class='button' href="https://github.com/Medical-Information-Assistant-MIA/MIA-FE">source</a>
-          <a class='button' href="https://mia-fe.vercel.app/">demo</a>
+          <a class='button' href="https://github.com/espressogoddess/bingo">source</a>
+          <a class='button' href="https://bingo.espressogoddess.dev">demo</a>
         </div>
       </article>
       <article class="project">
         <div class='project-img'>
-          <img src="./mia.png"/>
-        </div>
-        <h3>Mia</h3>
-        <p>Mia simplifies user's healthcare journey by consolidating all vital medical information in one place. Keep track of conditions, medications, doctors, and health events effortlessly. Access a centralized doctor directory. Maintain a personal health log to record important events and notes. Take control of your health with Mia.</p>
-        <ul>
-          <li>React</li>
-          <li><img src='./bullet.png'/></li>
-          <li>TypeScript</li>
-          <li><img src='./bullet.png'/></li>
-          <li>GraphQL</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Cypress</li>
-        </ul>
-        <div class="btn-container project-links">
-          <a class='button' href="https://github.com/Medical-Information-Assistant-MIA/MIA-FE">source</a>
-          <a class='button' href="https://mia-fe.vercel.app/">demo</a>
-        </div>
-      </article>
-      <article class="project">
-        <div class='project-img'>
-          <img src="./beam.png"/>
+          <img class="web-img" src="./beam.png"/>
         </div>
         <h3>Beam</h3>
         <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
@@ -336,7 +319,7 @@
       <h2>let's connect.</h2>
       <ul class="icons">
         <li>
-          <a href="mailto:amber@espressogoddess.dev?subject=Let's%20work%20together"><img class='icon' src='./email.png'/>
+          <a href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together"><img class='icon' src='./email.png'/>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/amber-shipley/"
@@ -349,7 +332,7 @@
           /></a>
         </li>
         <li>
-          <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharing"
+          <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharin"
             ><image class="icon" src="./cv.png"
           /></a>
         </li>
