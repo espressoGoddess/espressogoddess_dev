@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- @TODO: h2's are uneven (about, projects, etc) -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,15 +12,21 @@
         margin: 0 0;
         font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
           Times New Roman, serif;
+          display: flex;
+          justify-content: center;
       }
       header {
         padding: 17vh 8vw 10vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
       h1 {
         font-size: 2.8rem;
         margin: 0 0 4vh;
       }
-      h2, h3 {
+      h2 {
         margin-left: 8vw;
       }
       p {
@@ -52,7 +60,7 @@
       nav {
         display: flex;
         margin: 0 0;
-        justify-content: space-between;
+        justify-content: space-around;
         border-bottom: 1px solid rgb(243, 241, 241);
         position: fixed;
         top: 0;
@@ -97,22 +105,17 @@
         border: 1px solid  rgb(243, 241, 241);
         border-radius: 3px;
         padding: 1rem;
-        margin-left: 8vw;
         background-color: #e6d69d;
         box-shadow: 7px 7px 19px lightgray;
         display: inline-block;
-      }
-      .btn-container {
-        display: flex;
-        width: fit-content;
       }
       .mobile-img {
         height: 80vh;
         width: auto;
       }
       .project-links {
-        width: 100%;
-        margin: 5vh 3vw 2vh 0;
+        display: flex;
+        margin: 5vh 17vw 2vh;
         justify-content: space-evenly;
       }
       .project-links .button {
@@ -125,6 +128,12 @@
         transition: transform 300ms;
         box-shadow: none;
         color: white;
+      }
+      .wrapper {
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       #about, #projects, #contact {
         padding: 6.5vh 0 10vh;
@@ -149,6 +158,13 @@
         border: 1px solid rgb(243, 241, 241);
         padding-bottom: 5vh;
         margin-top: 1vh;
+      }
+      .projects {
+        text-align: center;
+        max-width: 1000px;
+      }
+      #projects > h2 {
+        margin-left: 3.7vw;
       }
       #contact {
         padding-bottom: 7vh;
@@ -178,10 +194,9 @@
           width: 23vw;
           height: auto;
           margin: 2vh auto 0 auto;
-          border: 1px solid rgb(243, 241, 241);
         }
         .project-links {
-          width: 50%;
+          /*width: 50%;*/
           /* center them*/
         }
         #projects li, #contact li  {
@@ -197,14 +212,8 @@
         header {
           padding-left: 18vw
         }
-        .btn-container {
-          margin-left: 10vw;
-        }
         .icons li {
-          margin: 2vh 13vw;
-        }
-        .project-links {
-          padding-left: 10vw;
+          margin: 2vh 8vw;
         }
         .about {
           display: flex;
@@ -218,109 +227,21 @@
     </style>
   </head>
   <body>
-    <nav>
-      <a href="#home">home</a>
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#contact">contact</a>
-    </nav>
-    <header id="home">
-      <h1>Amber Shipley</h1>
-      <p>Software Engineer</p>
-    </header>
-    <div class="btn-container">
-      <a class='button' href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together">get in touch</a>
-    </div>
-    <ul class="icons">
-      <li>
-        <a href="https://www.linkedin.com/in/amber-shipley/"
-          ><image class="icon" src="./linkedin.png"
-        /></a>
-      </li>
-      <li>
-        <a href="https://github.com/espressoGoddess"
-          ><image class="icon" src="./github.png"
-        /></a>
-      </li>
-      <li>
-        <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharing"
-          ><image class="icon" src="./cv.png"
-        /></a>
-      </li>
-    </ul>
-    <section id="about">
-      <h2>about me.</h2>
-      <div class="about">
-        <img src="./headshot.png" class='headshot'/>
-        <div>
-          <p>
-            I'm a frontend software engineer who's passionate about building user-friendly, reliable web applications. My diverse background includes 15+ years of customer-service roles including small business ownership, healthcare, and caregiving, which gives me a well-rounded perspective and a knack for navigating complex situations. I am open to new opportunities where I can put my problem solving skills to use.
-          </p>
-          <p>
-            My core values are reliability, discovery, adventure, and growth.
-          </p>
-          <p>
-            My ideal team is one that values collaboration, diversity, open communication, and a healthy work-life balance. If this sounds like your team, <a href="mailto:ashipley716@gmail.com">contact me</a>! I would love to learn more about it.
-          </p>
-        </div>
+    <div class="wrapper">
+      <nav>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <header id="home">
+        <h1>Amber Shipley</h1>
+        <p>Software Engineer</p>
+      </header>
+      <div class="btn-container">
+        <a class='button' href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together">get in touch</a>
       </div>
-    </section>
-    <section id="projects">
-      <h2>my projects.</h2>
-      <article class="project">
-        <div class='project-img'>
-          <img class="mobile-img" src="./bingo1.png"/>
-          <img class="mobile-img" src="./bingo2.png"/>
-          <img class="mobile-img" src="./bingo3.png"/>
-        </div>
-        <h3>Bingo</h3>
-        <p>Bingo is a full-stack bingo application with dynamic game board generation and user authentication. It is built using a normalized database schema to ensure data integrity and minimize duplication and authentication with Google OAuth via Next-Auth for secure user authentication.
-</p>
-        <ul>
-          <li>TypeScript</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Next.js</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Supabase</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Next-auth</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Tailwind</li>
-        </ul>
-        <div class="btn-container project-links">
-          <a class='button' href="https://github.com/espressogoddess/bingo">source</a>
-          <a class='button' href="https://bingo.espressogoddess.dev">demo</a>
-        </div>
-      </article>
-      <article class="project">
-        <div class='project-img'>
-          <img class="web-img" src="./beam.png"/>
-        </div>
-        <h3>Beam</h3>
-        <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
-        <ul>
-          <li>PostgreSQL</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Express.js</li>
-          <li><img src='./bullet.png'/></li>
-          <li>React</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Node</li>
-          <li><img src='./bullet.png'/></li>
-          <li>Cypress</li>
-        </ul>
-        <div class="btn-container project-links">
-          <a class='button' href="https://github.com/espressoGoddess/beam">source</a>
-          <a class='button' href="https://beam-pearl.vercel.app/">demo</a>
-        </div>
-      </article>
-    </section>
-    <section id="contact">
-      <h2>let's connect.</h2>
       <ul class="icons">
-        <li>
-          <a href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together"><img class='icon' src='./email.png'/>
-        </li>
         <li>
           <a href="https://www.linkedin.com/in/amber-shipley/"
             ><image class="icon" src="./linkedin.png"
@@ -332,14 +253,106 @@
           /></a>
         </li>
         <li>
-          <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharin"
+          <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharing"
             ><image class="icon" src="./cv.png"
           /></a>
         </li>
       </ul>
-    </section>
-    <footer>
-      <p>Code and Design by Amber Shipley</p>
-    </footer>
+      <section id="about">
+        <h2>about me.</h2>
+        <div class="about">
+          <img src="./headshot.png" class='headshot'/>
+          <div>
+            <p>
+              I'm a frontend software engineer who's passionate about building user-friendly, reliable web applications. My diverse background includes 15+ years of customer-service roles including small business ownership, healthcare, and caregiving, which gives me a well-rounded perspective and a knack for navigating complex situations. I am open to new opportunities where I can put my problem solving skills to use.
+            </p>
+            <p>
+              My core values are reliability, discovery, adventure, and growth.
+            </p>
+            <p>
+              My ideal team is one that values collaboration, diversity, open communication, and a healthy work-life balance. If this sounds like your team, <a href="mailto:ashipley716@gmail.com">contact me</a>! I would love to learn more about it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>my projects.</h2>
+        <div class="projects">
+        <article class="project">
+          <div class='project-img'>
+            <img class="mobile-img" src="./bingo1.png"/>
+            <img class="mobile-img" src="./bingo2.png"/>
+            <img class="mobile-img" src="./bingo3.png"/>
+          </div>
+          <h3>Bingo</h3>
+          <p>Bingo is a full-stack bingo application with dynamic game board generation and user authentication. It is built using a normalized database schema to ensure data integrity and minimize duplication and authentication with Google OAuth via Next-Auth for secure user authentication.
+  </p>
+          <ul>
+            <li>TypeScript</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Next.js</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Supabase</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Next-auth</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Tailwind</li>
+          </ul>
+          <div class="btn-container project-links">
+            <a class='button' href="https://github.com/espressogoddess/bingo">source</a>
+            <a class='button' href="https://bingo.espressogoddess.dev">demo</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class='project-img'>
+            <img class="web-img" src="./beam.png"/>
+          </div>
+          <h3>Beam</h3>
+          <p>Beam is a self-care app designed for users to process and manage their emotions. Users select a feeling, reflect on it, and note insights to prevent or recreate the emotion. The app then suggests relevant activities. Entries are stored in the Feelings Archive for ongoing review and editing.</p>
+          <ul>
+            <li>PostgreSQL</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Express.js</li>
+            <li><img src='./bullet.png'/></li>
+            <li>React</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Node</li>
+            <li><img src='./bullet.png'/></li>
+            <li>Cypress</li>
+          </ul>
+          <div class="btn-container project-links">
+            <a class='button' href="https://github.com/espressoGoddess/beam">source</a>
+            <a class='button' href="https://beam-pearl.vercel.app/">demo</a>
+          </div>
+        </article>
+      </div>
+      </section>
+      <section id="contact">
+        <h2>let's connect.</h2>
+        <ul class="icons">
+          <li>
+            <a href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together"><img class='icon' src='./email.png'/>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/amber-shipley/"
+              ><image class="icon" src="./linkedin.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/espressoGoddess"
+              ><image class="icon" src="./github.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/1Ojm-g7Uo_Vv6nWx1Aow-_sx37mW8JvZ0I717PyNLwow/edit?usp=sharin"
+              ><image class="icon" src="./cv.png"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p>Code and Design by Amber Shipley</p>
+      </footer>
+  </div>
   </body>
 </html>
