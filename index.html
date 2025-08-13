@@ -122,6 +122,11 @@
         margin: 0 0;
         box-shadow: none;
       }
+      .get-in-touch {
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+      }
       .button:active, .button:hover {
         background-color: #c6ae57;
         transform: translate(3%, 3%);
@@ -181,11 +186,17 @@
         height: 30vw;
         margin: 2vh 5vw;
       }
+      #img-1, #img-2 {
+          display: none;
+         }
       @media only screen and (min-width: 1200px) {
         #about, #projects, #contact {
           margin: 0 10vw;
         }
-        .web-img{
+        #img-1, #img-2 {
+          display: inline-block;
+         }        
+         .web-img{
           width: 70vw;
           height: auto;
           margin: 2vh auto 0 auto;
@@ -238,7 +249,7 @@
         <h1>Amber Shipley</h1>
         <p>Software Engineer</p>
       </header>
-      <div class="btn-container">
+      <div class="get-in-touch">
         <a class='button' href="mailto:ashipley716@gmail.com?subject=Let's%20work%20together">get in touch</a>
       </div>
       <ul class="icons">
@@ -280,8 +291,8 @@
         <div class="projects">
         <article class="project">
           <div class='project-img'>
-            <img class="mobile-img" src="./bingo1.png"/>
-            <img class="mobile-img" src="./bingo2.png"/>
+            <img class="mobile-img" id="img-1" src="./bingo1.png"/>
+            <img class="mobile-img" id="img-2" src="./bingo2.png"/>
             <img class="mobile-img" src="./bingo3.png"/>
           </div>
           <h3>Bingo</h3>
